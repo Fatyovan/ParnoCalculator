@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct ParnoCalculatorApp: App {
+    @StateObject private var userViewModel = UserViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(userViewModel)
         }
     }
 }

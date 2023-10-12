@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var userViewModel: UserViewModel
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            
-            Text("Hello, world!")
+        if userViewModel.isUserLoggedIn {
+            MainCalculationView()
+                .environmentObject(userViewModel)
+        } else {
+            InitialScreen()
         }
-        .padding()
     }
 }
 
