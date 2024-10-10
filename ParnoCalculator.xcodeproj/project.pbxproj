@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D93F78022CB6B83200D68528 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D93F78012CB6B83100D68528 /* CoreData.framework */; };
+		D93F78052CB6B89C00D68528 /* MainDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D93F78032CB6B89C00D68528 /* MainDataModel.xcdatamodeld */; };
+		D93F78072CB7BEAA00D68528 /* CoreDataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F78062CB7BEA400D68528 /* CoreDataStruct.swift */; };
+		D93F780A2CB7C71100D68528 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F78092CB7C70E00D68528 /* House.swift */; };
+		D93F780D2CB7C74000D68528 /* HouseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F780C2CB7C73D00D68528 /* HouseManager.swift */; };
 		D99C5A102AD7CB6000D52928 /* ParnoCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C5A0F2AD7CB6000D52928 /* ParnoCalculatorApp.swift */; };
 		D99C5A122AD7CB6000D52928 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C5A112AD7CB6000D52928 /* ContentView.swift */; };
 		D99C5A142AD7CB6100D52928 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99C5A132AD7CB6100D52928 /* Assets.xcassets */; };
 		D99C5A172AD7CB6100D52928 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99C5A162AD7CB6100D52928 /* Preview Assets.xcassets */; };
-		D99C5A1F2AD7CEE800D52928 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = D99C5A1E2AD7CEE800D52928 /* Realm */; };
-		D99C5A212AD7CEE800D52928 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D99C5A202AD7CEE800D52928 /* RealmSwift */; };
 		D99C5A242AD7CF0500D52928 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = D99C5A232AD7CF0500D52928 /* SwiftyJSON */; };
-		D99C5A272AD7CF5D00D52928 /* UserRObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C5A262AD7CF5D00D52928 /* UserRObj.swift */; };
-		D99C5A292AD7D0A200D52928 /* HouseRObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C5A282AD7D0A200D52928 /* HouseRObj.swift */; };
 		D99C5A2D2AD7D25600D52928 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C5A2C2AD7D25600D52928 /* SignupView.swift */; };
 		D99C5A2F2AD7D4C100D52928 /* MainCalculationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C5A2E2AD7D4C100D52928 /* MainCalculationView.swift */; };
 		D99C5A312AD7D72F00D52928 /* InitialScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C5A302AD7D72F00D52928 /* InitialScreen.swift */; };
 		D99C5A342AD7D76000D52928 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C5A332AD7D76000D52928 /* SignInView.swift */; };
 		D99C5A372AD7E3C800D52928 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C5A362AD7E3C800D52928 /* UserViewModel.swift */; };
-		D99C5A3A2AD7EF0100D52928 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C5A392AD7EF0100D52928 /* RealmManager.swift */; };
 		D99C5A3C2AD82FD200D52928 /* SideMenueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C5A3B2AD82FD200D52928 /* SideMenueView.swift */; };
 		D99C5A3F2AD832AB00D52928 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C5A3E2AD832AB00D52928 /* SideMenu.swift */; };
 		D99C5A422AD8333500D52928 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C5A412AD8333500D52928 /* Profile.swift */; };
@@ -30,19 +30,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D93F78012CB6B83100D68528 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D93F78042CB6B89C00D68528 /* MainDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MainDataModel.xcdatamodel; sourceTree = "<group>"; };
+		D93F78062CB7BEA400D68528 /* CoreDataStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStruct.swift; sourceTree = "<group>"; };
+		D93F78092CB7C70E00D68528 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		D93F780C2CB7C73D00D68528 /* HouseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseManager.swift; sourceTree = "<group>"; };
 		D99C5A0C2AD7CB6000D52928 /* ParnoCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParnoCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99C5A0F2AD7CB6000D52928 /* ParnoCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParnoCalculatorApp.swift; sourceTree = "<group>"; };
 		D99C5A112AD7CB6000D52928 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D99C5A132AD7CB6100D52928 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D99C5A162AD7CB6100D52928 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D99C5A262AD7CF5D00D52928 /* UserRObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRObj.swift; sourceTree = "<group>"; };
-		D99C5A282AD7D0A200D52928 /* HouseRObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseRObj.swift; sourceTree = "<group>"; };
 		D99C5A2C2AD7D25600D52928 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		D99C5A2E2AD7D4C100D52928 /* MainCalculationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCalculationView.swift; sourceTree = "<group>"; };
 		D99C5A302AD7D72F00D52928 /* InitialScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScreen.swift; sourceTree = "<group>"; };
 		D99C5A332AD7D76000D52928 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		D99C5A362AD7E3C800D52928 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
-		D99C5A392AD7EF0100D52928 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		D99C5A3B2AD82FD200D52928 /* SideMenueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenueView.swift; sourceTree = "<group>"; };
 		D99C5A3E2AD832AB00D52928 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		D99C5A412AD8333500D52928 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
@@ -56,18 +58,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				D99C5A242AD7CF0500D52928 /* SwiftyJSON in Frameworks */,
-				D99C5A212AD7CEE800D52928 /* RealmSwift in Frameworks */,
-				D99C5A1F2AD7CEE800D52928 /* Realm in Frameworks */,
+				D93F78022CB6B83200D68528 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D93F78002CB6B83100D68528 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D93F78012CB6B83100D68528 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D93F78082CB7C70700D68528 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				D93F78092CB7C70E00D68528 /* House.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		D93F780B2CB7C73400D68528 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D93F780C2CB7C73D00D68528 /* HouseManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		D99C5A032AD7CB6000D52928 = {
 			isa = PBXGroup;
 			children = (
 				D99C5A0E2AD7CB6000D52928 /* ParnoCalculator */,
+				D93F78002CB6B83100D68528 /* Frameworks */,
 				D99C5A0D2AD7CB6000D52928 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,10 +109,11 @@
 		D99C5A0E2AD7CB6000D52928 /* ParnoCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				D93F780B2CB7C73400D68528 /* Managers */,
+				D93F78082CB7C70700D68528 /* Objects */,
 				D99C5A0F2AD7CB6000D52928 /* ParnoCalculatorApp.swift */,
 				D99C5A112AD7CB6000D52928 /* ContentView.swift */,
-				D99C5A392AD7EF0100D52928 /* RealmManager.swift */,
-				D99C5A252AD7CF2B00D52928 /* RealmObjects */,
+				D93F78062CB7BEA400D68528 /* CoreDataStruct.swift */,
 				D99C5A352AD7E3A100D52928 /* ViewModels */,
 				D99C5A322AD7D74100D52928 /* SignInSignUpScreens */,
 				D99C5A2E2AD7D4C100D52928 /* MainCalculationView.swift */,
@@ -94,6 +121,7 @@
 				D99C5A3D2AD8329800D52928 /* Menu */,
 				D99C5A132AD7CB6100D52928 /* Assets.xcassets */,
 				D99C5A152AD7CB6100D52928 /* Preview Content */,
+				D93F78032CB6B89C00D68528 /* MainDataModel.xcdatamodeld */,
 			);
 			path = ParnoCalculator;
 			sourceTree = "<group>";
@@ -104,15 +132,6 @@
 				D99C5A162AD7CB6100D52928 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		D99C5A252AD7CF2B00D52928 /* RealmObjects */ = {
-			isa = PBXGroup;
-			children = (
-				D99C5A262AD7CF5D00D52928 /* UserRObj.swift */,
-				D99C5A282AD7D0A200D52928 /* HouseRObj.swift */,
-			);
-			path = RealmObjects;
 			sourceTree = "<group>";
 		};
 		D99C5A322AD7D74100D52928 /* SignInSignUpScreens */ = {
@@ -169,8 +188,6 @@
 			);
 			name = ParnoCalculator;
 			packageProductDependencies = (
-				D99C5A1E2AD7CEE800D52928 /* Realm */,
-				D99C5A202AD7CEE800D52928 /* RealmSwift */,
 				D99C5A232AD7CF0500D52928 /* SwiftyJSON */,
 			);
 			productName = ParnoCalculator;
@@ -202,7 +219,6 @@
 			);
 			mainGroup = D99C5A032AD7CB6000D52928;
 			packageReferences = (
-				D99C5A1D2AD7CEE800D52928 /* XCRemoteSwiftPackageReference "realm-swift" */,
 				D99C5A222AD7CF0500D52928 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = D99C5A0D2AD7CB6000D52928 /* Products */;
@@ -233,18 +249,19 @@
 			files = (
 				D99C5A442AD8334100D52928 /* Houses.swift in Sources */,
 				D99C5A122AD7CB6000D52928 /* ContentView.swift in Sources */,
+				D93F78052CB6B89C00D68528 /* MainDataModel.xcdatamodeld in Sources */,
 				D99C5A102AD7CB6000D52928 /* ParnoCalculatorApp.swift in Sources */,
-				D99C5A292AD7D0A200D52928 /* HouseRObj.swift in Sources */,
 				D99C5A422AD8333500D52928 /* Profile.swift in Sources */,
+				D93F78072CB7BEAA00D68528 /* CoreDataStruct.swift in Sources */,
 				D99C5A3F2AD832AB00D52928 /* SideMenu.swift in Sources */,
 				D99C5A2F2AD7D4C100D52928 /* MainCalculationView.swift in Sources */,
 				D99C5A462AD8344900D52928 /* Home.swift in Sources */,
-				D99C5A272AD7CF5D00D52928 /* UserRObj.swift in Sources */,
 				D99C5A312AD7D72F00D52928 /* InitialScreen.swift in Sources */,
 				D99C5A342AD7D76000D52928 /* SignInView.swift in Sources */,
 				D99C5A3C2AD82FD200D52928 /* SideMenueView.swift in Sources */,
-				D99C5A3A2AD7EF0100D52928 /* RealmManager.swift in Sources */,
+				D93F780D2CB7C74000D68528 /* HouseManager.swift in Sources */,
 				D99C5A372AD7E3C800D52928 /* UserViewModel.swift in Sources */,
+				D93F780A2CB7C71100D68528 /* House.swift in Sources */,
 				D99C5A2D2AD7D25600D52928 /* SignupView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +391,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ParnoCalculator/Preview Content\"";
+				DEVELOPMENT_TEAM = GF7K354RN3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Heat Calculator";
@@ -404,6 +422,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ParnoCalculator/Preview Content\"";
+				DEVELOPMENT_TEAM = GF7K354RN3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Heat Calculator";
@@ -450,14 +469,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D99C5A1D2AD7CEE800D52928 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-swift";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 		D99C5A222AD7CF0500D52928 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
@@ -469,22 +480,25 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D99C5A1E2AD7CEE800D52928 /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D99C5A1D2AD7CEE800D52928 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = Realm;
-		};
-		D99C5A202AD7CEE800D52928 /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D99C5A1D2AD7CEE800D52928 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
-		};
 		D99C5A232AD7CF0500D52928 /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D99C5A222AD7CF0500D52928 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		D93F78032CB6B89C00D68528 /* MainDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D93F78042CB6B89C00D68528 /* MainDataModel.xcdatamodel */,
+			);
+			currentVersion = D93F78042CB6B89C00D68528 /* MainDataModel.xcdatamodel */;
+			path = MainDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D99C5A042AD7CB6000D52928 /* Project object */;
 }

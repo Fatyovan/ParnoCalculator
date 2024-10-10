@@ -94,7 +94,7 @@ struct SideMenuView: View {
     }
     
     func logout() {
-        userViewModel.logout()
+        userViewModel.logOut()
     }
     
     func ProfileImageView() -> some View{

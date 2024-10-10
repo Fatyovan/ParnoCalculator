@@ -9,12 +9,16 @@ import SwiftUI
 
 @main
 struct ParnoCalculatorApp: App {
-    @StateObject private var userViewModel = UserViewModel()
+    let persistentContainer = CoreDataStack.shared.persistentContainer
+
+    @StateObject private var userViewModel = UserViewModel(viewContext: CoreDataStack.shared.persistentContainer.viewContext)
     
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(userViewModel)
+                .environment(\.managedObjectContext, persistentContainer.viewContext)
+                .preferredColorScheme(.light)
         }
     }
 }

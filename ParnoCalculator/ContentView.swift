@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var userViewModel: UserViewModel
-
+    @Environment(\.managedObjectContext) private var viewContext
+    
     var body: some View {
         if userViewModel.isUserLoggedIn {
             MainCalculationView()

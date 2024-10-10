@@ -6,16 +6,19 @@
 //
 
 import SwiftUI
-import RealmSwift
 
 struct SignupView: View {
-    @State private var username = ""
-    @State private var password = ""
+    
+    
+    @EnvironmentObject var userViewModel: UserViewModel
+    @Environment(\.managedObjectContext) private var viewContext
+    
+    @State private var username: String = ""
+    @State private var password: String = ""
+    @State private var isSignUp = false
     @State private var confirmPassword = ""
     @State private var passwordsMatch = true
     
-    @State private var isSignedUp = false
-    let realmManager = RealmManager.shared
     
     var body: some View {
         NavigationView {
@@ -43,18 +46,14 @@ struct SignupView: View {
             }
             .navigationBarTitle("Sign Up")
             .background(
-                NavigationLink("", destination: MainCalculationView(), isActive: $isSignedUp)
+                NavigationLink("", destination: MainCalculationView(), isActive: $userViewModel.isUserLoggedIn)
             )
         }
     }
     
     func signUp() {
         if password == confirmPassword {
-            if realmManager.signUpUser(username: username, password: password) {
-                isSignedUp = true
-            } else {
-                isSignedUp = false
-            }
+            userViewModel.signUp(username: username, password: password)
         } else {
             // Passwords do not match
             passwordsMatch = false

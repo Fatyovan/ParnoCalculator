@@ -10,8 +10,8 @@ import SwiftUI
 struct SignInView: View {
     @State private var username = ""
     @State private var password = ""
-    @State private var loginError = false
     @State private var isSignedUp = false
+    @State private var loginError: String?
     
     @EnvironmentObject var userViewModel: UserViewModel
     
@@ -26,6 +26,12 @@ struct SignInView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
                 
+                if let error = loginError {
+                    Text(error)
+                        .foregroundColor(.red)
+                        .padding()
+                }
+                
                 Button(action: login) {
                     Text("Login")
                         .font(.headline)
@@ -37,9 +43,6 @@ struct SignInView: View {
                 }
                 .padding()
                 
-                if loginError {
-                    Text("Invalid username or password").foregroundColor(.red)
-                }
             }
             .navigationBarTitle("Login")
         }
@@ -49,16 +52,14 @@ struct SignInView: View {
     }
     
     func login() {
-            let success = userViewModel.login(username: username, password: password)
-
-            if success {
-                loginError = false
-                isSignedUp = true
-            } else {
-                loginError = true
-            }
+        let success = userViewModel.logIn(username: username, password: password)
+        
+        if !success {
+            loginError = "Invalid username or password. Please try again."
+        } else {
+            loginError = nil
         }
-
+    }
 }
 
 struct SignInView_Previews: PreviewProvider {

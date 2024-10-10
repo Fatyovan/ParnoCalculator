@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23231" systemVersion="24A335" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="HouseEntity" representedClassName="HouseEntity" parentEntity="UserEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="houseName" optional="YES" attributeType="String"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserEntity" inverseName="houses" inverseEntity="UserEntity"/>
+        <relationship name="rooms" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RoomEntity" inverseName="house" inverseEntity="RoomEntity"/>
+    </entity>
+    <entity name="RoomEntity" representedClassName="RoomEntity" parentEntity="HouseEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="roomName" optional="YES" attributeType="String"/>
+        <relationship name="house" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HouseEntity" inverseName="rooms" inverseEntity="HouseEntity"/>
+    </entity>
+    <entity name="UserEntity" representedClassName="UserEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="userId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="userName" optional="YES" attributeType="String"/>
+        <relationship name="houses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="HouseEntity" inverseName="owner" inverseEntity="HouseEntity"/>
+    </entity>
+</model>
