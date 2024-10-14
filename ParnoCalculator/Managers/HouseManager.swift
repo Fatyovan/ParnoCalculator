@@ -22,6 +22,7 @@ class HouseManager: ObservableObject {
         let newHouse = HouseEntity(context: context)
         newHouse.houseName = houseName
         newHouse.owner = owner
+        newHouse.dateCreated = Date().timeIntervalSince1970
         
         saveContext()
         if let userId = owner.userId {
@@ -39,6 +40,15 @@ class HouseManager: ObservableObject {
         } catch {
             print("Error fetching houses: \(error)")
             houses = []
+        }
+    }
+    
+    func deleteHouse(house: HouseEntity) {
+        context.delete(house)
+        saveContext()
+        
+        if let userId = house.owner?.userId {
+            fetchAllHouses(for: userId)
         }
     }
     

@@ -1,10 +1,3 @@
-//
-//  Houses.swift
-//  ParnoCalculator
-//
-//  Created by Ivan Jovanovik on 12/10/2023.
-//
-
 import SwiftUI
 
 struct Houses: View {
@@ -22,20 +15,22 @@ struct Houses: View {
     
     var body: some View {
         NavigationView {
-           
-            List(houseManager.houses, id: \.self) { house in
-                Text(house.houseName ?? "Unknown House")
+            List {
+                ForEach(houseManager.houses.sorted(by: { $0.dateCreated > $1.dateCreated }), id: \.self) { house in
+                    NavigationLink(destination: RoomsListView(house: house)) {
+                        Text(house.houseName ?? "Unknown House")
+                    }
+                }
+                .onDelete(perform: deleteHouse)
             }
             .navigationTitle("Houses")
             .navigationBarItems(leading: Button(action: {
-                presentSideMenu.toggle()
+                presentSideMenu.toggle() // Toggle the side menu
             }) {
                 Image("menu")
                     .resizable()
                     .frame(width: 32, height: 32)
-            },
-            
-            trailing: Button(action: {
+            }, trailing: Button(action: {
                 isAddHousePresented = true
             }) {
                 Image(systemName: "plus")
@@ -44,7 +39,6 @@ struct Houses: View {
                 if let userId = userViewModel.currentUser?.userId {
                     houseManager.fetchAllHouses(for: userId)
                 }
-                
             }
             .sheet(isPresented: $isAddHousePresented) {
                 VStack {
@@ -53,16 +47,23 @@ struct Houses: View {
                         .padding()
                     
                     Button("Add House") {
-                        if let user = userViewModel.currentUser {
-                            houseManager.createHouse(houseName: newHouseName, owner: user)
+                        if let currentUser = userViewModel.currentUser {
+                            houseManager.createHouse(houseName: newHouseName, owner: currentUser)
+                            newHouseName = ""
+                            isAddHousePresented = false
                         }
-                        newHouseName = "" // Reset the text field
-                        isAddHousePresented = false // Dismiss the modal
                     }
                     .padding()
                 }
                 .padding()
             }
+        }
+    }
+    
+    private func deleteHouse(at offsets: IndexSet) {
+        offsets.forEach { index in
+            let house = houseManager.houses[index]
+            houseManager.deleteHouse(house: house)
         }
     }
 }

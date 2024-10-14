@@ -12,7 +12,7 @@ struct InitialScreen: View {
           NavigationView {
               VStack {
                   Spacer()
-                  Image("logo") // Replace with the name of your logo image asset
+                  Image("logo")
                       .resizable()
                       .frame(width: 150, height: 150)
                   Text("Heat calculator")

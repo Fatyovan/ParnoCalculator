@@ -1,18 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23231" systemVersion="24A335" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
     <entity name="HouseEntity" representedClassName="HouseEntity" parentEntity="UserEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="dateCreated" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="houseName" optional="YES" attributeType="String"/>
         <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserEntity" inverseName="houses" inverseEntity="UserEntity"/>
         <relationship name="rooms" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RoomEntity" inverseName="house" inverseEntity="RoomEntity"/>
     </entity>
     <entity name="RoomEntity" representedClassName="RoomEntity" parentEntity="HouseEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="roomDateCreated" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="roomName" optional="YES" attributeType="String"/>
+        <attribute name="roomPower" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
         <relationship name="house" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HouseEntity" inverseName="rooms" inverseEntity="HouseEntity"/>
+        <relationship name="walls" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WallEntity" inverseName="room" inverseEntity="WallEntity"/>
     </entity>
     <entity name="UserEntity" representedClassName="UserEntity" syncable="YES" codeGenerationType="class">
         <attribute name="password" optional="YES" attributeType="String"/>
         <attribute name="userId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="userName" optional="YES" attributeType="String"/>
         <relationship name="houses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="HouseEntity" inverseName="owner" inverseEntity="HouseEntity"/>
+    </entity>
+    <entity name="WallEntity" representedClassName="WallEntity" parentEntity="RoomEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="coefficient" optional="YES" attributeType="String"/>
+        <attribute name="deltaT" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="hasWindows" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="material" optional="YES" attributeType="String"/>
+        <attribute name="materialThickness" optional="YES" attributeType="String"/>
+        <attribute name="power" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="side" optional="YES" attributeType="String"/>
+        <attribute name="thermalInsulationMaterial" optional="YES" attributeType="String"/>
+        <attribute name="wallDateCreated" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="wallHeight" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="wallWidth" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="windowHeight" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="windowWidth" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="room" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RoomEntity" inverseName="walls" inverseEntity="RoomEntity"/>
     </entity>
 </model>

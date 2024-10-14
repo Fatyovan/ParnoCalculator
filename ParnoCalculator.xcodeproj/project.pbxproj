@@ -12,6 +12,9 @@
 		D93F78072CB7BEAA00D68528 /* CoreDataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F78062CB7BEA400D68528 /* CoreDataStruct.swift */; };
 		D93F780A2CB7C71100D68528 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F78092CB7C70E00D68528 /* House.swift */; };
 		D93F780D2CB7C74000D68528 /* HouseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F780C2CB7C73D00D68528 /* HouseManager.swift */; };
+		D951B47C2CBAF7770085DEBA /* WallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D951B47B2CBAF7730085DEBA /* WallManager.swift */; };
+		D95816AC2CB824860006969C /* RoomListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95816AB2CB824820006969C /* RoomListView.swift */; };
+		D95816B02CB824A30006969C /* RoomManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95816AF2CB8249F0006969C /* RoomManager.swift */; };
 		D99C5A102AD7CB6000D52928 /* ParnoCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C5A0F2AD7CB6000D52928 /* ParnoCalculatorApp.swift */; };
 		D99C5A122AD7CB6000D52928 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C5A112AD7CB6000D52928 /* ContentView.swift */; };
 		D99C5A142AD7CB6100D52928 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99C5A132AD7CB6100D52928 /* Assets.xcassets */; };
@@ -27,6 +30,8 @@
 		D99C5A422AD8333500D52928 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C5A412AD8333500D52928 /* Profile.swift */; };
 		D99C5A442AD8334100D52928 /* Houses.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C5A432AD8334100D52928 /* Houses.swift */; };
 		D99C5A462AD8344900D52928 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C5A452AD8344900D52928 /* Home.swift */; };
+		D9AE5C822CB83A91006DC2CA /* RoomDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AE5C812CB83A85006DC2CA /* RoomDetails.swift */; };
+		D9AE5C842CB83ABF006DC2CA /* AddWallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AE5C832CB83AB0006DC2CA /* AddWallView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +40,9 @@
 		D93F78062CB7BEA400D68528 /* CoreDataStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStruct.swift; sourceTree = "<group>"; };
 		D93F78092CB7C70E00D68528 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 		D93F780C2CB7C73D00D68528 /* HouseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseManager.swift; sourceTree = "<group>"; };
+		D951B47B2CBAF7730085DEBA /* WallManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallManager.swift; sourceTree = "<group>"; };
+		D95816AB2CB824820006969C /* RoomListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListView.swift; sourceTree = "<group>"; };
+		D95816AF2CB8249F0006969C /* RoomManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomManager.swift; sourceTree = "<group>"; };
 		D99C5A0C2AD7CB6000D52928 /* ParnoCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParnoCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99C5A0F2AD7CB6000D52928 /* ParnoCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParnoCalculatorApp.swift; sourceTree = "<group>"; };
 		D99C5A112AD7CB6000D52928 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +58,8 @@
 		D99C5A412AD8333500D52928 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		D99C5A432AD8334100D52928 /* Houses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Houses.swift; sourceTree = "<group>"; };
 		D99C5A452AD8344900D52928 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		D9AE5C812CB83A85006DC2CA /* RoomDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetails.swift; sourceTree = "<group>"; };
+		D9AE5C832CB83AB0006DC2CA /* AddWallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWallView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +94,21 @@
 		D93F780B2CB7C73400D68528 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				D951B47B2CBAF7730085DEBA /* WallManager.swift */,
+				D95816AF2CB8249F0006969C /* RoomManager.swift */,
 				D93F780C2CB7C73D00D68528 /* HouseManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		D95816AA2CB8247C0006969C /* RoomViews */ = {
+			isa = PBXGroup;
+			children = (
+				D95816AB2CB824820006969C /* RoomListView.swift */,
+				D9AE5C812CB83A85006DC2CA /* RoomDetails.swift */,
+				D9AE5C832CB83AB0006DC2CA /* AddWallView.swift */,
+			);
+			path = RoomViews;
 			sourceTree = "<group>";
 		};
 		D99C5A032AD7CB6000D52928 = {
@@ -164,6 +186,7 @@
 		D99C5A402AD832E300D52928 /* MainViews */ = {
 			isa = PBXGroup;
 			children = (
+				D95816AA2CB8247C0006969C /* RoomViews */,
 				D99C5A452AD8344900D52928 /* Home.swift */,
 				D99C5A432AD8334100D52928 /* Houses.swift */,
 				D99C5A412AD8333500D52928 /* Profile.swift */,
@@ -250,12 +273,17 @@
 				D99C5A442AD8334100D52928 /* Houses.swift in Sources */,
 				D99C5A122AD7CB6000D52928 /* ContentView.swift in Sources */,
 				D93F78052CB6B89C00D68528 /* MainDataModel.xcdatamodeld in Sources */,
+				D951B47C2CBAF7770085DEBA /* WallManager.swift in Sources */,
 				D99C5A102AD7CB6000D52928 /* ParnoCalculatorApp.swift in Sources */,
+				D9AE5C842CB83ABF006DC2CA /* AddWallView.swift in Sources */,
 				D99C5A422AD8333500D52928 /* Profile.swift in Sources */,
+				D95816B02CB824A30006969C /* RoomManager.swift in Sources */,
 				D93F78072CB7BEAA00D68528 /* CoreDataStruct.swift in Sources */,
 				D99C5A3F2AD832AB00D52928 /* SideMenu.swift in Sources */,
 				D99C5A2F2AD7D4C100D52928 /* MainCalculationView.swift in Sources */,
 				D99C5A462AD8344900D52928 /* Home.swift in Sources */,
+				D95816AC2CB824860006969C /* RoomListView.swift in Sources */,
+				D9AE5C822CB83A91006DC2CA /* RoomDetails.swift in Sources */,
 				D99C5A312AD7D72F00D52928 /* InitialScreen.swift in Sources */,
 				D99C5A342AD7D76000D52928 /* SignInView.swift in Sources */,
 				D99C5A3C2AD82FD200D52928 /* SideMenueView.swift in Sources */,

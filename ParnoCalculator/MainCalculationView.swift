@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainCalculationView: View {
     @State var presentSideMenu = false
-    @State var selectedSideMenuTab = 0
+    @State var selectedSideMenuTab = 1
     @EnvironmentObject var userViewModel: UserViewModel
     var body: some View {
         ZStack{
